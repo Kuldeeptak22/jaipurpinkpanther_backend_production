@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname));
 app.use(cookieParser());
 const port = process.env.PORT || 6500;
-import playerRouter from "../backend/routers/player.router.js";
+import playerRouter from "./routers/player.router.js";
 import standingRouter from "./routers/standings.router.js";
 import matchesRouter from "./routers/matches.router.js";
 import newsRouter from "./routers/news.router.js";
