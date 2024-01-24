@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is backend based on nodejs of jpp website",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon --exec babel-node index.js",
