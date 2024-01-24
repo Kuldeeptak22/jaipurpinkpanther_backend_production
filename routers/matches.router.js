@@ -1,5 +1,5 @@
 import express from "express";
-import { addMatch, deleteMatch, getMatch, getMatches, removeMatch, updateMatch } from "../controllers/matches.controller";
+import { addMatch, deleteMatch, getMatch, getMatches, removeMatch, updateMatch } from "../controllers/matches.controller.js";
 
 const router = express.Router();
 

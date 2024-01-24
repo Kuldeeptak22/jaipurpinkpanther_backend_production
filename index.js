@@ -3,18 +3,21 @@ import dotenv from "dotenv";
 import cors from "cors";
 import fs from "fs";
 import cookieParser from "cookie-parser";
+import path from "path";
 import mongoose from "mongoose";
 dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname));
 app.use(cookieParser());
 const port = process.env.PORT || 6500;
-import playerRouter from "./routers/player.router";
-import standingRouter from "./routers/standings.router";
-import matchesRouter from "./routers/matches.router";
-import newsRouter from "./routers/news.router";
+import playerRouter from "../backend/routers/player.router.js";
+import standingRouter from "./routers/standings.router.js";
+import matchesRouter from "./routers/matches.router.js";
+import newsRouter from "./routers/news.router.js";
 
 // Home Router
 app.get("/", (req, res) => {

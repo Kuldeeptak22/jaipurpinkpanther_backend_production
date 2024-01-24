@@ -1,6 +1,6 @@
 import multer from "multer";
-import PlayerModel from "../models/player.model";
-import { storage } from "../utils/multerFile";
+import PlayerModel from "../models/player.model.js";
+import { storage } from "../utils/multerFile.js";
 import fs from "fs";
 // Add Player data
 

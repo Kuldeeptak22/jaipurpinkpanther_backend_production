@@ -1,6 +1,6 @@
 import multer from "multer";
-import StandingsModel from "../models/standings.model";
-import { storage } from "../utils/multerFile";
+import StandingsModel from "../models/standings.model.js";
+import { storage } from "../utils/multerFile.js";
 import fs from "fs";
 // Add Player data
 

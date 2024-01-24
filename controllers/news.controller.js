@@ -1,6 +1,6 @@
 import multer from "multer";
-import NewsModel from "../models/news.model";
-import { storage } from "../utils/multerFile";
+import NewsModel from "../models/news.model.js";
+import { storage } from "../utils/multerFile.js";
 import fs from "fs";
 // Add Player data
 

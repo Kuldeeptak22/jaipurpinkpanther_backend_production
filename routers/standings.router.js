@@ -1,5 +1,5 @@
 import express from "express";
-import { addStanding, deleteStanding, getStanding, getStandings, removeStanding, updateStanding } from "../controllers/standings.controller";
+import { addStanding, deleteStanding, getStanding, getStandings, removeStanding, updateStanding } from "../controllers/standings.controller.js";
 const router = express.Router();
 
 router.post("/add_Standing", addStanding);

@@ -6,7 +6,7 @@ import {
   getPlayers,
   removePlayer,
   updatePlayer,
-} from "../controllers/player.controller";
+} from "../controllers/player.controller.js";
 const router = express.Router();
 
 router.post("/add_player", addPlayer);
