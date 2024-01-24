@@ -25,8 +25,9 @@ app.get("/", (req, res) => {
 });
 
 // Connect Mongoose to Database
+const DB = process.env.DATABASE;
 mongoose
-  .connect("mongodb://127.0.0.1:27017/JPP")
+  .connect(DB)
   .then(() => {
     console.log("DataBase Connected !!");
   })
@@ -38,7 +39,7 @@ if (!fs.existsSync("uploads")) {
 
 //App Running Server
 app.listen(port, () => {
-  console.log("Server is Running on port http://localhost:" + port);
+  console.log("Server is Running on port :" + port);
 });
 
 // Using Routers
