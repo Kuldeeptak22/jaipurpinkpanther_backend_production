@@ -13,7 +13,7 @@ const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname));
 app.use(cookieParser());
-const port = process.env.PORT || 6500;
+const PORT = process.env.PORT || 6800;
 import playerRouter from "./routers/player.router.js";
 import standingRouter from "./routers/standings.router.js";
 import matchesRouter from "./routers/matches.router.js";
@@ -38,8 +38,8 @@ if (!fs.existsSync("uploads")) {
 }
 
 //App Running Server
-app.listen(port, () => {
-  console.log("Server is Running on port :" + port);
+app.listen(PORT, () => {
+  console.log("Server is Running on port :" + PORT);
 });
 
 // Using Routers
